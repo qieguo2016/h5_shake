@@ -20,6 +20,4 @@ Reference:
 
 Screenshot
 ---
-![alt tag](/source/screenshot1.jpg)
-
-![alt tag](/source/screenshot2.jpg)
+![alt tag](/source/screenshot1.jpg)    ![alt tag](/source/screenshot2.jpg)
