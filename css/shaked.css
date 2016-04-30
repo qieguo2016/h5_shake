@@ -1,0 +1,106 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.bodymask {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: transparent;
+	color: hsl(120, 100%, 65%);
+}
+
+.shake-box {
+	width  : 100%;
+	height : 100%;
+	
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+    -webkit-align-items: center;
+	align-items: center;
+	
+	background: url(../source/shakBox.png) no-repeat #292C2D center center;
+	background-size: 225px 254px;
+}
+
+.shake-backimage {
+	box-sizing: border-box;
+	width: 100%;
+	height: 0;
+
+	-webkit-box-flex: 0;
+	flex: 0 0 auto;
+	text-align: center;
+	background-color: #282E2C;
+	border: none;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.shake-backimage img {
+	width: auto;
+	height: 100%;
+}
+
+.shake-upside {
+	height: 100px;
+	width: 100%;
+
+	-webkit-box-flex: 1.0;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: end;
+	-webkit-box-align: stretch;
+	
+	flex: 1 1 auto;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+	-webkit-align-items: stretch;
+	align-items: stretch;
+	background-color: #292C2D;
+}
+.shake-upside-inner {
+	box-sizing: border-box;
+	height: 111px;
+	-webkit-box-flex: 0;
+	
+	background: url(../source/shakBox.png) no-repeat #292C2D;
+	background-size: 225px 254px;
+	background-position: center -20px;
+	background-origin: content-box;
+	flex: 0 0 111px;
+}
+
+.shake-downside {
+	width: 100%;
+	height: 100px;
+	-webkit-box-flex: 1;
+	
+	flex: 1 1 auto;
+	box-sizing: border-box;
+	background: url(../source/shakBox.png) no-repeat #292C2D;
+	background-size: 225px 254px;
+	background-position: center -130px;
+}
+
+.shaking .shake-backimage {
+	height: 200px;
+	border-top: 5px solid #474A50;
+	border-bottom: 5px solid #474A50;
+}
