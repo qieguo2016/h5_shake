@@ -63,7 +63,7 @@ var Shake = function (threshold) {
 				//更改显示的图片
 				var changeImage = setTimeout(function () {
 					that.img.src = 'source/00' + (1 + Math.floor( Math.random() * 5 )) + '.gif';
-				},3000);				
+				},3500);				
 			}    
 			
 			that.last_x = that.x;      
