@@ -58,12 +58,12 @@ var Shake = function (threshold) {
 				
 				var shakeTimeout = setTimeout(function() {
 					that.shakeEffect.className = 'shake-box';
-				},2500);
+				},4000);
 				
 				//更改显示的图片
 				var changeImage = setTimeout(function () {
 					that.img.src = 'source/00' + (1 + Math.floor( Math.random() * 5 )) + '.gif';
-				},3500);				
+				},4200);				
 			}    
 			
 			that.last_x = that.x;      
@@ -74,7 +74,7 @@ var Shake = function (threshold) {
 };
 
 window.onload = function(){   
-	var shake1 = new Shake(2500);	//创建shake对象
+	var shake1 = new Shake(2000);	//创建shake对象
 	shake1.init();   	//初始化，绑定devicemotion事件
 	
 	window.addEventListener('touchstart',function () {
