@@ -25,6 +25,12 @@ var Shake = function (threshold) {
 	
 	this.shakeEffect = document.getElementsByClassName('shake-box')[0];  //摇一摇图片分裂效果
 	this.img = document.getElementById('id-shake-image');	//摇一摇后显示图片
+	var images = ['source/000.jpg', 'source/001.jpg', 'source/002.jpg'],
+		imgSource = new Image();
+	for (var _index = 0; _index < images.length; _index++) {
+		imgSource.src = images[_index];
+	}
+	
 	
 	this.init = function() {                
 		if (window.DeviceMotionEvent) {
@@ -62,7 +68,7 @@ var Shake = function (threshold) {
 				
 				//更改显示的图片
 				var changeImage = setTimeout(function () {
-					that.img.src = 'source/00' + (1 + Math.floor( Math.random() * 5 )) + '.gif';
+					that.img.src = images[ Math.floor( Math.random() * 3)];
 				},4200);				
 			}    
 			
