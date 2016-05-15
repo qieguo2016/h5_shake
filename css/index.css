@@ -104,11 +104,8 @@ body {
 }
 
 .shaking .shake-backimage {
-	/*height: 200px;
-	border-top: 5px solid #474A50;
-	border-bottom: 5px solid #474A50;	effect of transision is not good */
 	-webkit-animation: onshaking 2s ease 2 alternate; /* Safari Chrome and X5 */
-	animation: onshaking 2s ease 2 alternate;
+	animation: onshaking 2000ms cubic-bezier(0.57, 0.02, 0.12, 0.95) 2 alternate;
 }
 
 
